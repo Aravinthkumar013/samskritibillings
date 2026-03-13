@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samskriti Boutique Measurements</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(to right,#fce4ec,#f3e5f5);
+margin:0;
+padding:30px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+h2{
+color:#ad1457;
+margin-bottom:10px;
+}
+
+h3{
+color:#ad1457;
+margin-top:0;
+}
+
+label{
+font-weight:500;
+}
+
+input{
+width:100%;
+padding:6px;
+border-radius:4px;
+border:1px solid #ccc;
+text-align:center;
+}
+
+.row{
+display:flex;
+gap:25px;
+margin-top:20px;
+}
+
+.section{
+flex:1;
+background:#fff;
+padding:15px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#f8bbd0;
+color:#880e4f;
+padding:6px;
+}
+
+td{
+border:1px solid #ddd;
+padding:5px;
+}
+
+button{
+padding:10px 18px;
+border:none;
+border-radius:20px;
+background:#d81b60;
+color:white;
+cursor:pointer;
+font-weight:500;
+margin-right:10px;
+transition:0.2s;
+}
+
+button:hover{
+background:#880e4f;
+transform:scale(1.05);
+}
+
+.buttonRow{
+margin-top:20px;
+}
+
+.searchBox{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+display:none;
+width:300px;
+text-align:center;
+}
+
+.searchBox select,
+.searchBox input{
+margin-top:10px;
+padding:8px;
+border:1px solid #ccc;
+border-radius:5px;
+width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Samskriti Boutique – Measurements</h2>
+
+<label>Name</label>
+<input id="name">
+
+<br><br>
+
+<label>Phone</label>
+<input id="phone">
+
+<div class="row">
+
+<!-- SALWAR -->
+
+<div class="section">
+
+<h3>Salwar Measurements</h3>
+
+<table>
+
+<tr>
+<th>S.No</th>
+<th>Particular</th>
+<th>Measurement</th>
+</tr>
+
+<tr><td>1</td><td>Chest</td><td><input id="chest"></td></tr>
+<tr><td>2</td><td>Waist</td><td><input id="waist"></td></tr>
+<tr><td>3</td><td>Hip</td><td><input id="hip"></td></tr>
+<tr><td>4</td><td>Seat</td><td><input id="seat"></td></tr>
+<tr><td>5</td><td>Sh Chest</td><td><input id="shchest"></td></tr>
+<tr><td>6</td><td>Sh Waist</td><td><input id="shwaist"></td></tr>
+<tr><td>7</td><td>Sh Hip</td><td><input id="shhip"></td></tr>
+<tr><td>8</td><td>Sh Seat</td><td><input id="shseat"></td></tr>
+<tr><td>9</td><td>Arm Hole</td><td><input id="armhole"></td></tr>
+<tr><td>10</td><td>SL</td><td><input id="sl"></td></tr>
+<tr><td>11</td><td>SC</td><td><input id="sc"></td></tr>
+<tr><td>12</td><td>Full Length</td><td><input id="fulllength"></td></tr>
+<tr><td>13</td><td>FN</td><td><input id="fn"></td></tr>
+<tr><td>14</td><td>BN</td><td><input id="bn"></td></tr>
+<tr><td>15</td><td>Shoulder</td><td><input id="shoulder"></td></tr>
+<tr><td>16</td><td>Shoulder Width</td><td><input id="shoulderwidth"></td></tr>
+<tr><td>17</td><td>Pant Height</td><td><input id="pantheight"></td></tr>
+<tr><td>18</td><td>Slit Height</td><td><input id="slitheight"></td></tr>
+<tr><td>19</td><td>Details</td><td><input id="details"></td></tr>
+
+</table>
+
+</div>
+
+
+<!-- BLOUSE -->
+
+<div class="section">
+
+<h3>Blouse Measurements</h3>
+
+<table>
+
+<tr>
+<th>S.No</th>
+<th>Particular</th>
+<th>Measurement</th>
+</tr>
+
+<tr><td>1</td><td>Chest</td><td><input id="bchest"></td></tr>
+<tr><td>2</td><td>Waist</td><td><input id="bwaist"></td></tr>
+<tr><td>3</td><td>Arm Hole</td><td><input id="barmhole"></td></tr>
+<tr><td>4</td><td>SL</td><td><input id="bsl"></td></tr>
+<tr><td>5</td><td>SC</td><td><input id="bsc"></td></tr>
+<tr><td>6</td><td>Full Length</td><td><input id="bfulllength"></td></tr>
+<tr><td>7</td><td>FN</td><td><input id="bfn"></td></tr>
+<tr><td>8</td><td>BN</td><td><input id="bbn"></td></tr>
+<tr><td>9</td><td>Shoulder</td><td><input id="bshoulder"></td></tr>
+<tr><td>10</td><td>Shoulder Width</td><td><input id="bshoulderwidth"></td></tr>
+<tr><td>11</td><td>Front Sort</td><td><input id="frontsort"></td></tr>
+<tr><td>12</td><td>Cup</td><td><input id="cup"></td></tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="buttonRow">
+
+<button onclick="openSearch()">Search</button>
+<button onclick="saveMeasurement()">Save</button>
+<button onclick="updateMeasurement()">Update</button>
+<button onclick="newMeasurement()">New</button>
+
+</div>
+
+</div>
+
+
+<!-- SEARCH POPUP -->
+
+<div class="searchBox" id="searchBox">
+
+<h3>Search Customer</h3>
+
+<select id="searchType">
+<option value="name">Name</option>
+<option value="phone">Phone</option>
+</select>
+
+<input id="searchValue" placeholder="Enter value">
+
+<br><br>
+
+<button onclick="searchMeasurement()">Find</button>
+<button onclick="closeSearch()">Close</button>
+
+</div>
+
+<script>
+function getData(){
+return{
+name:document.getElementById("name").value,
+phone:document.getElementById("phone").value,
+
+salwar:{
+chest:document.getElementById("chest").value,
+waist:document.getElementById("waist").value,
+hip:document.getElementById("hip").value,
+seat:document.getElementById("seat").value,
+shchest:document.getElementById("shchest").value,
+shwaist:document.getElementById("shwaist").value,
+shhip:document.getElementById("shhip").value,
+shseat:document.getElementById("shseat").value,
+armhole:document.getElementById("armhole").value,
+sl:document.getElementById("sl").value,
+sc:document.getElementById("sc").value,
+fulllength:document.getElementById("fulllength").value,
+fn:document.getElementById("fn").value,
+bn:document.getElementById("bn").value,
+shoulder:document.getElementById("shoulder").value,
+shoulderwidth:document.getElementById("shoulderwidth").value,
+pantheight:document.getElementById("pantheight").value,
+slitheight:document.getElementById("slitheight").value,
+details:document.getElementById("details").value
+},
+
+blouse:{
+chest:document.getElementById("bchest").value,
+waist:document.getElementById("bwaist").value,
+armhole:document.getElementById("barmhole").value,
+sl:document.getElementById("bsl").value,
+sc:document.getElementById("bsc").value,
+fulllength:document.getElementById("bfulllength").value,
+fn:document.getElementById("bfn").value,
+bn:document.getElementById("bbn").value,
+shoulder:document.getElementById("bshoulder").value,
+shoulderwidth:document.getElementById("bshoulderwidth").value,
+frontsort:document.getElementById("frontsort").value,
+cup:document.getElementById("cup").value
+}
+};
+}
+
+function saveMeasurement(){
+fetch("http://localhost:5000/saveMeasurement",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify(getData())
+})
+.then(res=>res.json())
+.then(data=>{
+alert(data.message || "Measurement Saved");
+})
+.catch(()=>alert("Save failed"));
+}
+
+function updateMeasurement(){
+fetch("http://localhost:5000/updateMeasurement",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify(getData())
+})
+.then(res=>res.json())
+.then(data=>{
+if(data.success){
+alert(data.message || "Measurement Updated");
+}else{
+alert(data.message || "Update failed");
+}
+})
+.catch(()=>alert("Update failed"));
+}
+
+function searchMeasurement(){
+let type=document.getElementById("searchType").value;
+let value=document.getElementById("searchValue").value;
+
+fetch(`http://localhost:5000/searchMeasurement?type=${type}&value=${encodeURIComponent(value)}`)
+.then(res=>res.json())
+.then(data=>{
+
+if(!data){
+alert("Not Found");
+return;
+}
+
+document.getElementById("name").value=data.name || "";
+document.getElementById("phone").value=data.phone || "";
+
+let s=data.salwar || {};
+let b=data.blouse || {};
+
+/* salwar */
+document.getElementById("chest").value=s.chest || "";
+document.getElementById("waist").value=s.waist || "";
+document.getElementById("hip").value=s.hip || "";
+document.getElementById("seat").value=s.seat || "";
+document.getElementById("shchest").value=s.shchest || "";
+document.getElementById("shwaist").value=s.shwaist || "";
+document.getElementById("shhip").value=s.shhip || "";
+document.getElementById("shseat").value=s.shseat || "";
+document.getElementById("armhole").value=s.armhole || "";
+document.getElementById("sl").value=s.sl || "";
+document.getElementById("sc").value=s.sc || "";
+document.getElementById("fulllength").value=s.fulllength || "";
+document.getElementById("fn").value=s.fn || "";
+document.getElementById("bn").value=s.bn || "";
+document.getElementById("shoulder").value=s.shoulder || "";
+document.getElementById("shoulderwidth").value=s.shoulderwidth || "";
+document.getElementById("pantheight").value=s.pantheight || "";
+document.getElementById("slitheight").value=s.slitheight || "";
+document.getElementById("details").value=s.details || "";
+
+/* blouse */
+document.getElementById("bchest").value=b.chest || "";
+document.getElementById("bwaist").value=b.waist || "";
+document.getElementById("barmhole").value=b.armhole || "";
+document.getElementById("bsl").value=b.sl || "";
+document.getElementById("bsc").value=b.sc || "";
+document.getElementById("bfulllength").value=b.fulllength || "";
+document.getElementById("bfn").value=b.fn || "";
+document.getElementById("bbn").value=b.bn || "";
+document.getElementById("bshoulder").value=b.shoulder || "";
+document.getElementById("bshoulderwidth").value=b.shoulderwidth || "";
+document.getElementById("frontsort").value=b.frontsort || "";
+document.getElementById("cup").value=b.cup || "";
+
+closeSearch();
+})
+.catch(()=>alert("Search failed"));
+}
+
+function openSearch(){
+document.getElementById("searchBox").style.display="block";
+}
+
+function closeSearch(){
+document.getElementById("searchBox").style.display="none";
+}
+
+function newMeasurement(){
+document.querySelectorAll("input").forEach(i=>i.value="");
+}
+</script>
+
+</body>
+</html>
